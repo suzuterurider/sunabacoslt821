@@ -1,16 +1,160 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="ja">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Document</title>
-  <link rel="stylesheet" type="text/css" href="./css/style.css">
+	<meta charset="utf-8">
+	<meta name="keywords" content="サイトをキーワードで説明">
+	<meta name="description" content="どんなサイトかを短い文章で説明">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=1">
+	<link rel="icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" media="screen and ( min-width:769px )" href="css/style_pc.css">
+	<link rel="stylesheet" type="text/css" media="screen and ( max-width:768px )" href="css/style_sp.css">
+	<title>月木でわかる HTML5 &amp; CSS3</title>
+
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+
+
 </head>
+
 <body>
 
-<h1>お盆も元気にすなばこーずLT開催中！</h1>
+	<header>
+		<div class="hum_menu"> <!-- このクラスがハンバーガーボタンになる -->
+			<a href="javascript:void(0);">
+				<span></span>
+				<span></span>
+				<span></span>
+			</a>
+		</div>
+		<ul>
+			<li><a href="#sec1" id="menu-sec1">見出しのエリア</a></li>
+			<li><a href="#sec2" id="menu-sec2">flexのエリア</a></li>
+			<li><a href="#sec3" id="menu-sec3">センタリングエリア</a></li>
+			<li><a href="#sec4" id="menu-sec4">制作実績</a></li>
+			<!-- 課題1解答 -->
+			<li><a href="#" id="lng-ja">日本語</a></li>
+			<li><a href="#" id="lng-en">English</a></li>
+			<!-- 課題1解答 ここまで -->
+	</ul>
+	</header>
 
+	<article>
+		<section id="sec1">
+			<h1>やほおおおおお <br> HTML5 &amp; CSS3</h1>
+		</section>
+
+		<section id="sec2">
+			<h1>3つのブロックエリア<br>flexとの上手な付き合い方</h1>
+
+			<!-- 課題5解答 -->
+			<button id="append">エリア追加</button>
+			<!-- 課題5解答 ここまで -->
+
+			<!-- 課題6解答 -->
+			<p>1〜10までの整数を入力してください</p>
+			<form>
+				<label for="textForm">値: </label>
+				<input type="text" id="textForm">
+				<button id="appendDivNum">指定した数のエリアを追加する</button>
+			</form>
+			<div id="attention">1〜10までの整数を入力してください</div>
+			<!-- 課題6解答 ここまで -->
+
+			<div class="box flex_area">
+				<div class="flex_area_item">
+					<h2>flexを使って左から詰めていく</h2>
+					<p>ここにflexに関してのテキストが入りますここにflexに関してのテキストが入ります ここにflexに関してのテキストが入りますここにflexに関してのテキストが入ります ここにflexに関してのテキストが入りますここにflexに関してのテキストが入ります ここにflexに関してのテキストが入りますここにflexに関してのテキストが入ります
+					</p>
+				</div>
+				<div class="flex_area_item">
+					<h2>flexを使って左から詰めていく</h2>
+					<p>ここにflexに関してのテキストが入りますここにflexに関してのテキストが入ります ここにflexに関してのテキストが入りますここにflexに関してのテキストが入ります ここにflexに関してのテキストが入りますここにflexに関してのテキストが入ります ここにflexに関してのテキストが入りますここにflexに関してのテキストが入ります
+					</p>
+				</div>
+				<div class="flex_area_item">
+					<h2>flexを使って左から詰めていく</h2>
+					<p>ここにflexに関してのテキストが入りますここにflexに関してのテキストが入ります ここにflexに関してのテキストが入りますここにflexに関してのテキストが入ります ここにflexに関してのテキストが入りますここにflexに関してのテキストが入ります ここにflexに関してのテキストが入りますここにflexに関してのテキストが入ります
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="sec3">
+			<div class="box">
+				<h1>まずはお聞かせ下さい<br>御社の"中央寄せ"について</h1>
+				<p>PC版では段落を整えるために改行したい。しかしSP版では不用意な改行を入れたくない。そんな時はbrをdisplay:noneすると良いでしょう。</p>
+				<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト。</p>
+				<p>
+					テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト。<br> テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+				</p>
+				<p>
+					テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト、<br> テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテ、
+					<br> テキストテキストテキストテキストテキストテキストテキストテキストテキス
+					<br> テキストテキストテキストテキストテキストテキストテキストテキストテキストテキ。
+				</p>
+			</div>
+		</section>
+
+		<section id="sec4">
+			<div class="box port">
+				<h1>制作実績</h1>
+				<p>ここでもdisplay:flexの練習をしましょうdisplay:flexは様々な並び替えをすることができます。<br> グリッドレイアウトと言われるCSSも最近流行っています。ここではflexを使用します。
+				</p>
+
+				<!-- 課題3解答 -->
+				<button id="size-up">画像拡大</button>
+				<!-- 課題3解答 ここまで -->
+
+				<!-- 課題4解答 -->
+				<button id="img-change">画像変更</button>
+				<!-- 課題4解答 ここまで -->
+
+				<div class="portfolio">
+					<a href="#"><img src="img/thumb_01.png" alt="あいうえお">
+						<p class="port_title">あいうえお建設様</p>
+					</a>
+					<p class="port_margin">ここに制作実績のテキストが入ります。ここに制作実績のテキストが入ります。ここに制作実績のテキストが入ります。 ここに制作実績のテキストが入ります。ここに制作実績のテキストが入ります。ここに制作実績のテキストが入ります。
+					</p>
+				</div>
+
+				<div class="portfolio flex_reverse">
+					<p class="port_margin">ここに制作実績のテキストが入ります。ここに制作実績のテキストが入ります。ここに制作実績のテキストが入ります。 ここに制作実績のテキストが入ります。ここに制作実績のテキストが入ります。ここに制作実績のテキストが入ります。
+					</p>
+					<a href="#"><img src="img/thumb_02.png" alt="かきくけこ">
+						<p class="port_title">かきくけこ電気様</p>
+					</a>
+				</div>
+
+				<div class="portfolio">
+					<a href="#"><img src="img/thumb_03.png" alt="さしすせそ">
+						<p class="port_title">さしすせそ興行様</p>
+					</a>
+					<p class="port_margin">ここに制作実績のテキストが入ります。ここに制作実績のテキストが入ります。ここに制作実績のテキストが入ります。 ここに制作実績のテキストが入ります。ここに制作実績のテキストが入ります。ここに制作実績のテキストが入ります。
+					</p>
+				</div>
+
+			</div>
+		</section>
+	</article>
+    <button id="pagetop"><a href="#"> page top</a></button>
+
+	<footer>
+		<p class="copyright">Copyright &copy; DEMO all rights reserved.</p>
+	</footer>
+
+	<!-- 課題7解答 -->
+	<div id="chatWrap">
+		<div id="chatBox"></div>
+		<div class="chatFormBox">
+			<form>
+				<input type="text" id="chatForm" placeholder="メッセージを入力">
+				<button id="addChat">送信する</button>
+			</form>
+		</div>
+	</div>
+	<!-- 課題7解答ここまで -->
 
 </body>
+
 </html>
